@@ -8,7 +8,7 @@ const cors=require('cors')
 app.use(bodyParser.json());
 app.use(cors())
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/certificate");
+mongoose.connect("mongodb+srv://developer:nitesh-developer@cluster0.monh9xn.mongodb.net/Certificate?retryWrites=true&w=majority&appName=Cluster0");
 app.use(express.json());
 const db=mongoose.connection
 db.on("error",()=>console.log("Can't connect to DB"));
